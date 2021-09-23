@@ -1,0 +1,106 @@
+	/*Tablet Landscape*/
+		@media screen and (max-width: 1060px){
+			#primary{width: 67%;}
+			#seconday{width: 30%;margin-left: 3%;}
+		}
+		/*Tablet Potrait*/
+		@media screen and (max-width: 768px){
+			#primary {width: 100%;}
+			#secondary{ width: 100%; margin: 0;border: none; }
+		}
+ 		img{
+ 			max-width: 100%;
+ 		}
+ 		@media (min-device-width:600px;){
+ 			img[data-src-600px]{
+ 				content: att(data-src-600px,url);
+ 			}
+ 		}
+ 		@media (mix-device-width:800px) {
+ 			img[data-src-800px;]
+ 			content:attr(data-src-800px,url)
+ 		}
+ 		html{
+ 			font-size: 100%;
+ 		}
+ 		@media (min-width: 640px ){body{font-size: 1rem;}}
+ 		@media (min-width: 940px ){body{font-size: 1.2rem;}}
+ 		@media (min-width: 1100px){body{font-size: 1.5rem;}}
+	input{
+		text-align: right;
+		width: 100%;
+		height: 70px;
+		font-size: 25px;
+		border-style: inset;
+		border:2px solid white;
+		margin-bottom: 30px;
+		background-color: transparent;
+		color:white;
+		border-left: none;
+		border-top: none;
+		border-right: none;
+
+	}
+	input:hover
+	{
+		border:2px solid black;
+		border-left: none;
+		border-right: none;
+		border-top: none;
+
+	}
+	body{
+		text-align: center;
+		background:linear-gradient(90deg,yellow,deeppink);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		color: red;
+	}
+	h1{
+		font-family:monospace;
+		white-space: 2px;
+		color:white;
+		font-size: 35px;
+
+
+		
+	}
+	button{
+		font-family: monospace;
+		font-weight: bold;
+		width: 80px;
+		height: 50px;
+		font-size: 20px;
+		color:grey;
+		border:2px solid white;
+		border-radius: 4px;
+		letter-spacing: 2px;
+		background-color: white;
+	}
+ button:hover{
+ 	/*background-color: white;*/
+ 	color:black;
+
+ 	
+ }
+ #clear{
+ 	width: 330px;
+ 	margin-top: 2px;
+ 	position: relative;
+ 	background-color: red
+ 	
+ #clear:hover
+ {
+ }
+ .btn
+ {
+ 	background-color: yellow;
+ }
+ .num
+ {
+ 	background-color: deeppink;
+ }
+ table
+ {
+ 	background-color: white;
+ }

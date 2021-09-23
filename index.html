@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<title>
+		Calculator
+	</title>
+	<script src="./js/script.js"></script>
+	<link rel="stylesheet" href="./css/tailwind.css">
+</head>
+
+<body>
+<div class="flex flex-col justify-center gap-1 bg-green-100 p-20">
+<div class="flex justify-center">
+	<h1 class="text-2xl font-bold ">Calculator</h1>
+	</div>
+<div class="flex justify-center gap-y-1 shadow-lg">
+<input class=" bg-gray-100 p-6 w-64 mb-2 h-16 outline-none align-middle font-bold text-lg" id="demo" value=""  autofocus>
+</div>
+<div class="flex gap-1 justify-center">
+<button class="bg-green-300 hover:bg-green-400 font-bold text-lg p-5 h-16 w-16 rounded-xl" type="button"  onclick="changecontentto9()" >9</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button"  onclick="changecontentto8()">8</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button"  onclick="changecontentto7()">7</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button"  onclick="changecontentto6()">6</button>
+</div>
+<div class="flex gap-1 justify-center">
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button"  onclick="changecontentto5()">5</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button"  onclick="changecontentto4()">4</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button"  onclick="changecontentto3()">3</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button" onclick="changecontentto2()">2</button>
+</div>
+<div class="flex gap-1 justify-center">
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16  rounded-xl" type="button"  onclick="changecontentto1()">1</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button"  onclick="changecontentto0()">0</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button"  onclick="changecontenttomodulo()">%</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button"  onclick="main_function()">=</button>
+</div>
+<div class="flex gap-1 justify-center">
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button"  onclick="changecontenttoplus()">+</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button" onclick="changecontenttominus()">-</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button" onclick="changecontenttopro()">*</button>
+<button class="bg-green-300 font-bold hover:bg-green-400 text-lg p-5 h-16 w-16 rounded-xl" type="button" onclick="changecontenttodivision()">/</button>
+</div>
+<div class="flex gap-1 justify-center">
+<button class="bg-green-300 p-5 font-bold hover:bg-green-400 text-lg h-16 w-16 rounded-xl" type="button"   onclick="changecontenttoe()">e</button>
+<button class="bg-green-300 p-5 font-bold hover:bg-green-400 text-lg h-16 w-16 rounded-xl" type="button"  onclick="changecontenttopi()">PI</button>
+<button class="bg-green-300 p-5 font-bold hover:bg-green-400 text-lg h-16 w-16 rounded-xl" type="button"  onclick="changecontenttodot()">.</button>
+<button class="bg-green-300 p-5 font-bold hover:bg-green-400 text-lg h-16 w-16 rounded-xl" type="button"  onclick="changecontenttosquare()">^</button>
+</div>
+<div class="flex justify-center">
+<button   class="bg-green-200 font-bold hover:bg-green-300 w-64 h-16 rounded-lg" onclick="ClearScreen()">Clear</button>
+</div>
+</div>
+</body>
+</html>
